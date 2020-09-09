@@ -2,7 +2,7 @@
 
 namespace Saikat\camelCase;
 
-class camelCase extends \Exception
+class camelCase 
 {
 
 
@@ -58,7 +58,7 @@ class camelCase extends \Exception
                 $jsonArray[$new] = self::jsonConverter($value);
             }
         }
-        
+
         return json_encode($jsonArray);
     }
 }
