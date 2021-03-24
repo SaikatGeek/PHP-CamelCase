@@ -21,6 +21,11 @@ class camelCase
             }
         }
     }
+    
+    public static function camelCaseObject($object){
+        $array = json_decode(json_encode($object), true);
+        return self::arrayConverter($array);
+    }
 
     private static function arrayConverter($array)
     {
